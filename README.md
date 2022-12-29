@@ -12,39 +12,56 @@ This repository is a template for a data science or machine learning project. Th
 ```bash
 .
 ├── .dvc                      
-│   ├── config                      # Main configuration file
-├── config                      
+│   └── config                      # DVC project-level config file
+│
+├── calculations                    # Computation files obtained in the project
+│   
+├── config                          # Hydra configuration
 │   ├── main.yaml                   # Main configuration file
-│   ├── model                       # Configurations for training model
-│   │   ├── model1.yaml             # First variation of parameters to train model
-│   │   └── model2.yaml             # Second variation of parameters to train model
+│   ├── model                       # Configurations for model training 
+│   │   ├── model_1.yaml            # First set of parameters for training the model
+│   │   └── model_2.yaml            # Second set of parameters for training the model
 │   └── process                     # Configurations for processing data
-│       ├── process1.yaml           # First variation of parameters to process data
-│       └── process2.yaml           # Second variation of parameters to process data
-├── data            
-│   ├── final                       # data after training the model
-│   ├── processed                   # data after processing
-│   ├── raw                         # raw data
-│   └── raw.dvc                     # DVC file of data/raw
-├── docs                            # documentation for your project
-├── dvc.yaml
-├── dvc.yaml                        # DVC pipeline
-├── .flake8                         # configuration for flake8 - a Python formatter tool
-├── .gitignore                      # ignore files that cannot commit to Git
-├── Makefile                        # store useful commands to set up the environment
-├── models                          # store models
-├── notebooks                       # store notebooks
-├── .pre-commit-config.yaml         # configurations for pre-commit
-├── pyproject.toml                  # dependencies for poetry
-├── README.md                       # describe your project
-├── src                             # store source code
-│   ├── __init__.py                 # make src a Python module 
-│   ├── process.py                  # process data before training model
-│   └── train_model.py              # train model
-└── tests                           # store tests
-    ├── __init__.py                 # make tests a Python module 
-    ├── test_process.py             # test functions for process.py
-    └── test_train_model.py         # test functions for train_model.py
+│       ├── process_1.yaml          # First set of parameters for data processing
+│       └── process_2.yaml          # Second set of parameters for data processing
+│
+├── data                            # Data of the project          
+│   ├── final                       # The final, canonical data for modeling
+│   ├── interim                     # Intermediate data that has been transformed
+│   └── raw                         # The original, immutable data dump
+│
+├── dvc                             # Storage of DVC files  
+│   ├── data                        # DVC files tracking data-related files and directories 
+│   └── models                      # DVC files tracking model-related files and directories
+│
+├── models                          # Trained and serialized models, model predictions, or model summaries
+│
+├── notebooks                       # Jupyter Notebooks
+│
+├── src                             # Source code for use in the project
+│   ├── __init__.py                 # Makes src a Python module
+│   ├── data                        # Scripts for loading, generating, and processing data
+│   │   └── process.py
+│   ├── models                      # Scripts for training models and their subsequent use for making predictions                 
+│   │   └── train_model.py
+│   └── visualization               # Scripts for creating exploratory and results-oriented visualizations
+│       └── visualize.py
+│
+├── tests                           # Source code for code testing
+│    ├── __init__.py                 # Makes tests a Python module
+│    ├── test_process.py             # Test functions for process.py
+│    ├── test_train.py               # Test functions for train.py
+│    └── test_visualize.py           # Test functions for visualize.py
+│
+├── .dvcignore                      # Files or directories that should be excluded when traversing a DVC project
+├── .flake8                         # Configuration of flake8
+├── .gitignore                      # List of ignored files that cannot commit to Git
+├── .pre-commit-config.yaml         # Configuration file for pre-commit package
+├── LICENSE                         # License file of the repository
+├── pyproject.toml                  # Unified Python project settings file that replaces setup.py
+├── README.md                       # The top-level readme file for developers using this project
+└── requirements.txt                # The requirements file for reproducing the analysis environment
+
 ```
 
 ## How to use this project
