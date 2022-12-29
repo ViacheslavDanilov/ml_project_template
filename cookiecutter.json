@@ -1,0 +1,6 @@
+{
+    "directory_name": "project-name",
+    "author_name": "Your name or name of your organization/company/team",
+    "description": "A short description of the project",
+    "open_source_license": ["MIT", "BSD-3-Clause", "No license file"]
+}
