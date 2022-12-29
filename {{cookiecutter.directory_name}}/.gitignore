@@ -129,10 +129,7 @@ dmypy.json
 .pyre/
 
 # Dataset
-dataset/
-
-# Dataset on DVC
-!dvc/dataset/
+data/
 
 # Models
 *.pth
@@ -165,4 +162,4 @@ logs/
 .dvc/cache
 
 # Directory with temporary files
-/temp/
+temp/
