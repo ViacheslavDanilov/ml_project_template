@@ -1,4 +1,4 @@
-# Cookiecutter template for an ML, DS, or AI project 
+# Cookiecutter template for an ML, DS or AI project 
 
 ## What is this?
 This repository represents a logical, reasonably standardized, but flexible project structure for doing and sharing data science work.
