@@ -67,6 +67,8 @@ cookiecutter https://github.com/ViacheslavDanilov/ml-project-template
 │   ├── data                        # DVC files tracking data-related files and directories 
 │   └── models                      # DVC files tracking model-related files and directories
 │
+├── media                           # Media files used for README.md
+
 ├── models                          # Trained and serialized models, model predictions, or model summaries
 │
 ├── notebooks                       # Jupyter Notebooks
