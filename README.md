@@ -89,9 +89,9 @@ cookiecutter https://github.com/ViacheslavDanilov/ml-project-template
 │    └── test_visualize.py          # Test functions for visualize.py
 │
 ├── .dvcignore                      # Files or directories that should be excluded when traversing a DVC project
-├── .flake8                         # Configuration of flake8
 ├── .gitignore                      # List of ignored files that cannot commit to Git
 ├── .pre-commit-config.yaml         # Configuration file for pre-commit package
+├── create_env.sh                   # Shell script to create conda environment
 ├── LICENSE                         # License file of the repository
 ├── pyproject.toml                  # Unified Python project settings file that replaces setup.py
 ├── README.md                       # The top-level readme file for developers using this project
