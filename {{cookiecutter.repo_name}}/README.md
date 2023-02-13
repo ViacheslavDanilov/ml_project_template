@@ -10,12 +10,8 @@
 │   
 ├── config                          # Hydra configuration
 │   ├── main.yaml                   # Main configuration file
-│   ├── model                       # Configurations for model training 
-│   │   ├── model_1.yaml            # First set of parameters for training the model
-│   │   └── model_2.yaml            # Second set of parameters for training the model
-│   └── process                     # Configurations for processing data
-│       ├── process_1.yaml          # First set of parameters for data processing
-│       └── process_2.yaml          # Second set of parameters for data processing
+│   ├── data.yaml                   # Data processing configurations
+│   └── model.yaml                  # Model training and testing configurations
 │
 ├── data                            # Data of the project          
 │   ├── final                       # The final, canonical data for modeling

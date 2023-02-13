@@ -1,17 +1,27 @@
-defaults:
-  - process: process1
-  - model: model1
-  - _self_
+hydra:
+  run:
+    dir: logs/${hydra.job.name}
+  job:
+    chdir: false
+  output_subdir:
+  job_logging:
+    version: 1
+    formatters:
+      simple:
+        format: '[%(asctime)s][%(levelname)s] - %(message)s'
+        datefmt: '%d-%m-%Y %H:%M:%S'
+    handlers:
+      console:
+        class: logging.StreamHandler
+        formatter: simple
+        stream: ext://sys.stdout
+      file:
+        class: logging.FileHandler
+        formatter: simple
+        # relative to the job log directory
+        filename: ${hydra.run.dir}/${now:%d-%m-%Y_%H-%M-%S}.log
+    root:
+      level: DEBUG
+      handlers: [file]    # [console, file]
 
-raw: 
-  path: data/raw/sample.csv
-
-processed:
-  dir: data/processed
-  name: processed.csv
-  path: ${processed.dir}/${processed.name}
-
-final:
-  dir: data/final
-  name: final.csv
-  path: ${final.dir}/${final.name}
+    disable_existing_loggers: false
