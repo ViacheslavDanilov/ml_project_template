@@ -46,8 +46,6 @@ cookiecutter https://github.com/ViacheslavDanilov/ml-project-template
 .
 ├── .dvc                      
 │   └── config                      # DVC project-level config file
-│
-├── calculations                    # Computation files obtained in the project
 │   
 ├── config                          # Hydra configuration
 │   ├── main.yaml                   # Main configuration file
