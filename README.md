@@ -35,7 +35,7 @@ conda install cookiecutter
 
 ------------
 ``` bash
-cookiecutter https://github.com/ViacheslavDanilov/ml-project-template
+cookiecutter https://github.com/ViacheslavDanilov/ml_project_template
 ```
 
 
