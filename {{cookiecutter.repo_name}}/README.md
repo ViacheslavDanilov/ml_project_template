@@ -27,16 +27,16 @@
 ├── notebooks                       # Jupyter Notebooks
 │
 ├── src                             # Source code for use in the project
-│   ├── __init__.py                 # Makes src a Python module
+│   ├── __init__.py                 # Make src a Python module
 │   ├── data                        # Scripts for loading, generating, and processing data
-│   │   └── process.py
+│   │   └── __init__.py             # Make data a Python module
 │   ├── models                      # Scripts for training models and their subsequent use for making predictions                 
-│   │   └── train_model.py
-│   └── visualization               # Scripts for creating exploratory and results-oriented visualizations
-│       └── visualize.py
+│   │   └── __init__.py             # Make models a Python module
+│   └── vis                         # Scripts for creating exploratory and results-oriented visualizations
+│       └── __init__.py             # Make vis a Python module
 │
 ├── tests                           # Source code for code testing
-│    ├── __init__.py                # Makes tests a Python module
+│    ├── __init__.py                # Make tests a Python module
 │    ├── test_process.py            # Test functions for process.py
 │    ├── test_train.py              # Test functions for train.py
 │    └── test_visualize.py          # Test functions for visualize.py
