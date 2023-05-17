@@ -5,7 +5,11 @@
 .
 ├── .dvc                      
 │   └── config                      # DVC project-level config file
-│   
+│
+├── .github                         # GitHub actions configuration directory
+│   └── workflows                   
+│       └── ci.yaml                 # Configuration file for continuous integration
+│
 ├── configs                         # Hydra configuration
 │   ├── main.yaml                   # Main configuration file
 │   ├── data.yaml                   # Data processing configurations
@@ -25,6 +29,10 @@
 ├── models                          # Trained and serialized models, model predictions, or model summaries
 │
 ├── notebooks                       # Jupyter Notebooks
+│
+├── requirements                    # Directory containing various requirements files for replicating the analysis environment
+│   ├── dev.txt                     # Requirements file for the development
+│   └── tests.txt                   # Requirements file for testing and continuous integration
 │
 ├── src                             # Source code for use in the project
 │   ├── __init__.py                 # Make src a Python module
@@ -47,7 +55,6 @@
 ├── create_env.sh                   # Shell script to create conda environment
 ├── LICENSE                         # License file of the repository
 ├── pyproject.toml                  # Unified Python project settings file that replaces setup.py
-├── README.md                       # The top-level readme file for developers using this project
-└── requirements.txt                # The requirements file for reproducing the analysis environment
+└── README.md                       # The top-level readme file for developers using this project
 
 ```

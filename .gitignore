@@ -162,14 +162,6 @@ fabric.properties
 *.3dm
 *.max
 
-### Example user template template
-### Example user template
-
-# IntelliJ project files
-.idea
-*.iml
-out
-gen
 ### Windows template
 # Windows thumbnail cache files
 Thumbs.db
@@ -364,7 +356,35 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
+# Dataset
+/data/
+
+# Models
+*.pth
+
+# PyCharm settings
+.idea
+
+# VSCode settings
+.vscode
+
+# Spyder
+.spyproject/
+
+# Jupyter NB Checkpoints
+.ipynb_checkpoints/
+
+# vim
+*.swp
+*.swo
+
+# Hydra logs directory
+logs/
+
 # DVC files
 .dvc/config.local
 .dvc/tmp
 .dvc/cache
+
+# Directory with temporary files
+temp/
