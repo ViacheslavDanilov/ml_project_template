@@ -47,6 +47,13 @@ repos:
     files: \.(py)$
     args: [--settings-path, pyproject.toml]
 
+# ruff
+- repo: https://github.com/astral-sh/ruff-pre-commit
+  rev: 'v0.0.269'
+  hooks:
+  - id: ruff
+    args: [--fix, --exit-non-zero-on-fix]
+
 # docstring style checker
 - repo: https://github.com/pycqa/pydocstyle
   rev: 6.3.0
@@ -62,6 +69,7 @@ repos:
   - id: mypy
     args: [--config-file, pyproject.toml]
 
+# exclude given directories from checking
 exclude: |
   (?x)(
       ^src/models/mmdetection/|
