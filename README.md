@@ -39,7 +39,7 @@ cookiecutter https://github.com/ViacheslavDanilov/ml_project_template
 ```
 
 
-## The resulting directory structure
+# Project structure
 
 ------------
 ```bash
@@ -71,10 +71,6 @@ cookiecutter https://github.com/ViacheslavDanilov/ml_project_template
 │
 ├── notebooks                       # Jupyter Notebooks
 │
-├── requirements                    # Directory containing various requirements files for replicating the analysis environment
-│   ├── dev.txt                     # Requirements file for the development
-│   └── tests.txt                   # Requirements file for testing and continuous integration
-│
 ├── src                             # Source code for use in the project
 │   ├── __init__.py                 # Make src a Python module
 │   ├── data                        # Scripts for loading, generating, and processing data
@@ -93,6 +89,7 @@ cookiecutter https://github.com/ViacheslavDanilov/ml_project_template
 ├── .dvcignore                      # Files or directories that should be excluded when traversing a DVC project
 ├── .gitignore                      # List of ignored files that cannot commit to Git
 ├── .pre-commit-config.yaml         # Configuration file for pre-commit package
+├── environment.yaml                # Configuration file used to define and manage a Conda environment
 ├── create_env.sh                   # Shell script to create conda environment
 ├── LICENSE                         # License file of the repository
 ├── pyproject.toml                  # Unified Python project settings file that replaces setup.py
